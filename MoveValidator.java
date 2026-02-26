@@ -344,9 +344,9 @@ public class MoveValidator {
         if(
             coords.length() == 4 &&
             tryParseInt(x1) == null &&
-            tryParseInt(y1) != null &&
+            tryParseInt(y1) != null && tryParseInt(y1) <= 8 &&
             tryParseInt(x2) == null &&
-            tryParseInt(y2) != null
+            tryParseInt(y2) != null&& tryParseInt(y2) <= 8
         ){
             return true;
         }
@@ -354,3 +354,4 @@ public class MoveValidator {
         return false;
     }
 }
+
