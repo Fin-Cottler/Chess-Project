@@ -104,7 +104,10 @@ public class Board {
 
     /*
     Write the move method
-
+        the move method moves a piece from some coordinate to a different coordinate
+        YOU DO NOT NEED TO VERIFY IF THIS IS A LEGAL CHESS MOVE. I HAVE DONE THAT FOR YOU
+            (move will make the change when it is called, no matter what)
+        
         move does not return anything
         move takes 2 parameters:
             currentCoord(String): the coordinate of the piece you would like to move
@@ -165,3 +168,4 @@ public class Board {
         scanner.close();
     }
 }
+
